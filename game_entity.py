@@ -12,5 +12,5 @@ class GameEntity:
     def draw(self, screen):
         pygame.draw.rect(screen, self.color, (self.x, self.y, self.width, self.height))
 
-    def update(self, delete_time):
-        raise NotImplementedError("Must be overriden by subclass.")
+    def update(self, delta_time, keys_pressed):
+        raise NotImplementedError("Must be overridden by subclass.")
